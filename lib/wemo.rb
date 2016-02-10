@@ -23,6 +23,10 @@ module WeMo
   def self.on(location)
     Device.new(location).on
   end
+  
+  def self.off(location)
+    Device.new(location).off
+  end
 
   private
 
