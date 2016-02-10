@@ -19,6 +19,10 @@ module WeMo
   def self.sensors
     @sensors ||= devices("sensors")
   end
+  
+  def self.on(location)
+    Device.new(location).on
+  end
 
   private
 
